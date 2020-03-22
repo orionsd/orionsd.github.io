@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Меняйся Легко - Корзина</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mmenu.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/mmenu-init.js"></script>
+
+</head>
+
+<div class="modal fade" id="exModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="main-title-wrapper">
+                    <h3 class="main-title">Выберите дату и время визита</h3>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" method="get" action="">
+                    <div class="row row-modal">
+                        <div class="col-12 col-md-6 modal-col">
+                            <div class="m-field-wrapper">
+                                <p class="input-modal modal-person">
+                                    <label for="modal-name-input">Ваши Ф.И.О</label><input type="text"
+                                                                                           id="modal-name-input"
+                                                                                           placeholder="Введите ваше имя">
+                                </p>
+
+                                <p>
+                                    <span class="modal-title-2">Дата визита</span>
+                                </p>
+
+                                <p class="input-modal datepick-modal">
+                                    <input type="text" placeholder="Выберите дату">
+                                </p>
+
+                                <p>
+                                    <span class="modal-title-2">Адрес оказания услуги</span>
+                                </p>
+
+                                <p class="modal-field">
+                                    <select id="select_сity_modal" size="3">
+                                        <option value="1">Новосибирск</option>
+                                        <option value="2">Москва</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 modal-col right">
+                            <div class="m-field-wrapper">
+                                <p class="input-modal tel-modal">
+                                    <label for="modal-tel-input">Контактный телефон</label><input type="tel"
+                                                                                                  id="modal-tel-input"
+                                                                                                  placeholder="+7">
+                                </p>
+
+                                <p class="input-modal modal-time">
+                                    <label for="modal-time">Время визита</label><input type="time"
+                                                                                       id="modal-time"
+                                                                                       min="09:00" max="18:00"
+                                                                                       placeholder="Укажите время">
+                                </p>
+
+                                <p class="input-modal modal-address">
+                                    <input type="text" placeholder="Введите адрес">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 modal-submit-wrapper">
+                            <input class="submit-input_modal" class="green" type="submit" value="Подтвердить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <header class="row custom-width header">
+
+        <nav id="my-menu">
+
+            <ul class="n-menu-services_m">
+                <li>
+                    <a href="services.html"><span>Услуги</span></a>
+                    <ul>
+                        <li><a href="#">Наращивание ресниц</a></li>
+                        <li><a href="#">Наращивание бровей</a></li>
+                        <li><a href="#">П</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Бонусная программа</a></li>
+                <li><a href="#">Портфолио и сертификаты</a></li>
+                <li><a href="#">Мастера</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="col-12 col-lg-8 col-header col-header-1">
+            <div class="col-header-sub">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="top-links top-links_left">
+                    <a href="services.html">Наши услуги</a>
+                    <a href="#">Интернет-Магазин</a>
+                </div>
+            </div>
+            <div class="phone-wrapper">
+
+                <div class="personal-mobile">
+                    <div class="top-icon-wrapper ph">
+                        <a href="#" class="search-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper">
+                        <a href="cart.html" class="cart-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper last">
+                        <a href="#" class="login-btn"> <span>Личный кабинет</span></a>
+                    </div>
+                </div>
+
+                <a class="phone" href="tel:+7(4722)522020">+7 (4722) 52 20 20</a>
+
+                <div class="burger-wrapper-mobile">
+                    <a href="#my-menu" class="hamburger hamburger--emphatic">
+                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-header col-header2">
+            <div class="top-links top-links_right">
+                <a href="#">Корпоративные программы</a>
+            </div>
+            <ul class="city-list">
+                <li>
+                    <a href="#"><span>Новосибирск</span></a>
+                    <ul>
+                        <li><a href="#">Новосибирск</a></li>
+                        <li><a href="#">Москва</a></li>
+                        <li><a href="#">Барнаул</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
+
+<div class="container-fluid container-n-menu">
+    <div class="row custom-width n-menu">
+        <div class="col-12 col-n-menu">
+            <div class="n-menu-left">
+
+
+                <ul class="city-list city-list-mobile">
+                    <li>
+                        <a href="#"><span>Новосибирск</span></a>
+                        <ul>
+                            <li><a href="#">Новосибирск</a></li>
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Барнаул</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <nav class="nv">
+                    <ul class="n-menu-services">
+                        <li>
+                            <a href="#"><span>Услуги</span></a>
+                            <ul>
+                                <li><a href="#">Наращивание ресниц</a></li>
+                                <li><a href="#">Наращивание бровей</a></li>
+                                <li><a href="#">П</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="n-menu-rest">
+                    <li><a href="#">Бонусная программа</a></li>
+                    <li><a href="#">Портфолио и сертификаты</a></li>
+                    <li><a href="#">Мастера</a></li>
+                </ul>
+            </div>
+
+            <div class="n-menu-right">
+                <div class="personal">
+                    <div class="top-icon-wrapper">
+                        <a href="#" class="search-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper">
+                        <a href="cart.html" class="cart-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper last">
+                        <a href="#" class="login-btn"><span>Личный кабинет</span></a>
+                    </div>
+                </div>
+
+                <div class="burger-wrapper">
+                    <a href="#my-menu" class="hamburger hamburger--emphatic">
+                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <section class="row cart-stripe">
+
+        <div class="col-12 top-stripe-img-wrapper">
+            <div class="main-title-wrapper">
+                <h2 class="main-title">Корзина</h2>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="row custom-width cart">
+
+        <div class="col-12 col-cart">
+
+            <div class="cart-window">
+
+                <div class="table-cart-header">
+                    <h5>Товары в корзине</h5>
+                </div>
+
+                <div class="table-inner">
+                    <table class="table-cart">
+                        <tr class="gap gap-1">
+                            <td colspan="6"></td>
+                        </tr>
+                        <tr class="table-cart-row">
+                            <td class="cart-img">
+                                <div class="cart-img-wrapper"><img src="images/cart/item.png" alt=""></div>
+                            </td>
+                            <td class="cart-desc">
+                                <h5>Наращивание ресниц</h5>
+
+                                <p>г.Белгород ул.Богдана-Хмельницкого д.5 п.2 кв. 283, этаж 9</p>
+                            </td>
+
+                            <td class="cart-date">
+                                <h5>Дата:</h5>
+                                <time><p>31.10.2019</p>
+
+                                    <p>18:45</p></time>
+                            </td>
+
+
+                            <td class="cart-rate">
+                                <h5>Тариф </h5>
+
+                                <p>Название тарифа</p>
+                            </td>
+
+                            <td class="cart-price">
+                                <h5>Цена</h5>
+
+                                <p><span class="price">22060</span> <span class="currency">руб.</span></p>
+                            </td>
+
+                            <td class="cart-remove">
+                                <div class="remove-wrapper">
+                                    <button class="remove-img"><img src="images/cart/remove.png" alt=""></button>
+                                    <button class="remove-btn">Удалить</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="gap">
+                            <td colspan="6"></td>
+                        </tr>
+
+                        <tr class="table-cart-row">
+                            <td class="cart-img">
+                                <div class="cart-img-wrapper"><img src="images/cart/item.png" alt=""></div>
+                            </td>
+                            <td class="cart-desc">
+                                <h5>Наращивание ресниц</h5>
+
+                                <p>г.Белгород ул.Богдана-Хмельницкого д.5 п.2 кв. 283, этаж 9</p>
+                            </td>
+
+                            <td class="cart-date">
+                                <h5>Дата:</h5>
+                                <time><p>31.10.2019</p>
+
+                                    <p>18:45</p></time>
+                            </td>
+
+
+                            <td class="cart-rate">
+                                <h5>Тариф </h5>
+
+                                <p>Название тарифа</p>
+                            </td>
+
+                            <td class="cart-price">
+                                <h5>Цена</h5>
+
+                                <p><span class="price">22061</span> <span class="currency">руб.</span></p>
+                            </td>
+
+                            <td class="cart-remove">
+                                <div class="remove-wrapper">
+                                    <button class="remove-img"><img src="images/cart/remove.png" alt=""></button>
+                                    <button class="remove-btn">Удалить</button>
+                                </div>
+                            </td>
+                        </tr>
+
+                        <tr class="gap">
+                            <td colspan="6"></td>
+                        </tr>
+
+                        <tr class="table-cart-row">
+                            <td class="cart-img">
+                                <div class="cart-img-wrapper"><img src="images/cart/item.png" alt=""></div>
+                            </td>
+                            <td class="cart-desc">
+                                <h5>Наращивание ресниц</h5>
+
+                                <p>г.Белгород ул.Богдана-Хмельницкого д.5 п.2 кв. 283, этаж 9</p>
+                            </td>
+
+                            <td class="cart-date">
+                                <h5>Дата:</h5>
+                                <time><p>31.10.2019</p>
+
+                                    <p>18:45</p></time>
+                            </td>
+
+
+                            <td class="cart-rate">
+                                <h5>Тариф </h5>
+
+                                <p>Название тарифа</p>
+                            </td>
+
+                            <td class="cart-price">
+                                <h5>Цена</h5>
+
+                                <p><span class="price">22062</span> <span class="currency">руб.</span></p>
+                            </td>
+
+                            <td class="cart-remove">
+                                <div class="remove-wrapper">
+                                    <button class="remove-img"><img src="images/cart/remove.png" alt=""></button>
+                                    <button class="remove-btn">Удалить</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="t-step2">
+
+                        <div class="t-step2-col t-step2-col-left">
+
+                            <div class="t-step2-wrapper">
+                                <div class="main-title-wrapper">
+                                    <h5 class="main-title">Личный кабинет</h5>
+                                    <span class="st2-btn"></span>
+                                </div>
+
+                                <div class="t-step2-card-body">
+                                    <p class="input-step2 login-step2">
+                                        <label for="st2-login-input">Логин</label><input type="text"
+                                                                                         id="st2-login-input"
+                                                                                         placeholder="Введите почту/номер телефона">
+                                    </p>
+
+                                    <p class="input-step2 pass-step2">
+                                        <label for="st2-pass-input">Пароль</label><input type="password"
+                                                                                         id="st2-pass-input"
+                                                                                         placeholder="Введите пароль">
+                                    </p>
+
+                                    <button class="button button_orange">Войти</button>
+
+                                    <a class="btn-forget-pass" href="#">Забыли пороль?</a>
+                                </div>
+
+                            </div>
+
+
+                            <div class="t-step2-info">
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="t-step2-col">
+                            <div class="t-step2-wrapper">
+                                <div class="main-title-wrapper">
+                                    <h5 class="main-title">Контактные данные</h5>
+                                    <span class="st2-btn"></span>
+                                </div>
+                                <div class="t-step2-card-body">
+                                    <p class="input-step2 fname-step2">
+                                        <label for="st2-fname-input">Ваши Ф.И.О</label><input type="text"
+                                                                                              id="st2-fname-input"
+                                                                                              placeholder="Как к вам обращаться?">
+                                    </p>
+
+                                    <p class="input-step2 tel-step2">
+                                        <label for="st2-tel-input">Контактный телефон</label><input type="tel"
+                                                                                                    id="st2-tel-input"
+                                                                                                    placeholder="+7">
+                                    </p>
+
+                                    <p>
+                                        <span class="st2-title-2">Адрес доставки</span>
+                                    </p>
+
+                                    <p class="st2-field">
+                                        <select id="select_сity" size="3">
+                                            <option value="1">Новосибирск</option>
+                                            <option value="2">Москва</option>
+                                        </select>
+                                    </p>
+
+                                    <p class="input-step2">
+                                        <input type="text" placeholder="Введите адрес">
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="t-step3">
+
+                        <div class="t-step3-col">
+
+                            <div class="main-title-wrapper">
+                                <h5 class="main-title">Выберите способ оплаты</h5>
+                            </div>
+
+                            <div class="st3-card-wrapper">
+
+                                <div class="card st3-card one">
+                                    <div class="card-header">
+                                        <h5>Оплата наличными</h5>
+                                        <i></i>
+                                    </div>
+                                    <div class="card-body"><p>При данном выборе оплаты, подготовьте сумму для оплаты
+                                        курьреру или мастеру.</p></div>
+                                    <div class="card-footer">
+                                        <a class="st3-card-btn active" href="#">Выбрать <i
+                                                class="st3-card-radio active"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="card st3-card second">
+                                    <div class="card-header">
+                                        <h5>Онлайн оплата</h5>
+                                        <i></i>
+                                    </div>
+                                    <div class="card-body"><p>Оплата производится: G-pay / Apple pay Visa /
+                                        MasterCard</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <a class="st3-card-btn" href="#">Выбрать <i
+                                                class="st3-card-radio"></i></a>
+                                    </div>
+                                </div>
+
+                                <div class="card st3-card third">
+                                    <div class="card-header">
+                                        <h5>Оплата бонусами</h5>
+                                        <i></i>
+                                    </div>
+                                    <div class="card-body"><p>Данная оплата действует для зарегистрированных
+                                        пользователей.</p></div>
+                                    <div class="card-footer">
+                                        <a class="st3-card-btn" href="#">Выбрать <i
+                                                class="st3-card-radio"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="table-cart-footer">
+                    <div class="gap-bottom"></div>
+                    <div class="total-tr">
+                        <div class="total-cell"><p class="total-text">Итоговая стоимость всех ваших заказов. Пожалуйста
+                            перепроверьте все и перейдите к
+                            оформлению.</p></div>
+                        <div class="total-cell second">
+                            <div class="total-td-info">
+                                <div class="total-info-wrapper">
+                                    <h3 class="total-text-title">Итого:</h3>
+
+                                    <h3 class="total-price"><span class="price">22060</span> <span
+                                            class="currency">руб.</span></h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-tr">
+                        <div class="bottom-tr-bottoms">
+                            <a href="#" class="buy-next-btn">Продолжить покупки</a>
+                            <a href="#" class="to-apply-btn">Перейти к оформлению</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container">
+
+    <footer class="row footer">
+        <div class="col-6 col-md-5 col-lg-4 footer-col footer-col_border footer-col_border-1">
+            <h4 class="footer-title">Услуги</h4>
+            <ul class="footer-menu">
+                <li><a href="#">Маникюр</a></li>
+                <li><a href="#">Педикюр</a></li>
+                <li><a href="#">Наращивание ресниц</a></li>
+                <li><a href="#">Дизайн бровей</a></li>
+                <li><a href="#">Депиляция</a></li>
+                <li><a href="#">Массаж</a></li>
+                <li><a href="#">Макияж</a></li>
+                <li><a href="#">Косоплетение и укладка волос</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 footer-col-center footer-col_border">
+
+            <div class="footer-list-wrapper footer-list-wrapper-1">
+
+                <h4 class="footer-title">Контакты</h4>
+
+                <div class="footer-contacts">
+                    <a class="tel-link" href="tel:+7(000)0000000">+7 (000) 000 0000</a>
+                    <a class="tel-link" href="mailto:yandex@yandex.ru">yandex@yandex.ru</a>
+                    <address>г.Новосибирск ул.Уличная д.5</address>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-4 footer-col-center footer-col-last">
+            <div class="footer-list-wrapper footer-list-wrapper-2">
+                <h4 class="footer-title">Социальные сети</h4>
+                <ul class="social">
+                    <li><a class="social-link insta" href="#"></a></li>
+                    <li><a class="social-link vk" href="#"></a></li>
+                    <li><a class="social-link facebook" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+</body>
+</html>

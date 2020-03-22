@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Меняйся Легко - Услуги</title>
+
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mmenu.css">
+    <link rel="stylesheet" href="css/hamburgers.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/services.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap4-datepicker.js"></script>
+    <script src="js/datepicker-loc.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="bootstrap/bootstrap.min.js"></script>
+    <script src="js/mmenu.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/mmenu-init.js"></script>
+    <script src="js/services.js"></script>
+
+</head>
+
+<div class="modal fade" id="exModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="main-title-wrapper">
+                    <h3 class="main-title">Выберите дату и время визита</h3>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form class="modal-form" method="get" action="">
+                    <div class="row row-modal">
+                        <div class="col-12 col-md-6 modal-col">
+                            <div class="m-field-wrapper">
+                                <p class="input-modal modal-person">
+                                    <label for="modal-name-input">Ваши Ф.И.О</label><input type="text"
+                                                                                           id="modal-name-input"
+                                                                                           placeholder="Введите ваше имя">
+                                </p>
+
+                                <p>
+                                    <span class="modal-title-2">Дата визита</span>
+                                </p>
+
+                                <p class="input-modal datepick-modal">
+                                    <input class="datepicker" type="text" placeholder="Выберите дату">
+                                </p>
+
+                                <p>
+                                    <span class="modal-title-2">Адрес оказания услуги</span>
+                                </p>
+
+                                <p class="modal-field">
+                                    <select id="select_сity_modal" size="3">
+                                        <option value="1">Новосибирск</option>
+                                        <option value="2">Москва</option>
+                                    </select>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 modal-col right">
+                            <div class="m-field-wrapper">
+                                <p class="input-modal tel-modal">
+                                    <label for="modal-tel-input">Контактный телефон</label><input type="tel"
+                                                                                                  id="modal-tel-input"
+                                                                                                  placeholder="+7">
+                                </p>
+
+                                <p class="input-modal modal-time">
+                                    <label for="modal-time">Время визита</label><input type="time"
+                                                                                             id="modal-time"
+                                                                                             min="09:00" max="18:00"
+                                                                                             placeholder="Укажите время">
+                                </p>
+
+                                <p class="input-modal modal-address">
+                                    <input type="text" placeholder="Введите адрес">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-12 modal-submit-wrapper">
+                            <input class="submit-input_modal" class="green" type="submit" value="Подтвердить">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <header class="row custom-width header">
+
+        <nav id="my-menu">
+
+            <ul class="n-menu-services_m">
+                <li>
+                    <a href="/services.html"><span>Услуги</span></a>
+                    <ul>
+                        <li><a href="#">Наращивание ресниц</a></li>
+                        <li><a href="#">Наращивание бровей</a></li>
+                        <li><a href="#">П</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Бонусная программа</a></li>
+                <li><a href="#">Портфолио и сертификаты</a></li>
+                <li><a href="#">Мастера</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="col-12 col-lg-8 col-header col-header-1">
+            <div class="col-header-sub">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="images/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="top-links top-links_left">
+                    <a href="services.html">Наши услуги</a>
+                    <a href="#">Интернет-Магазин</a>
+                </div>
+            </div>
+            <div class="phone-wrapper">
+
+                <div class="personal-mobile">
+                    <div class="top-icon-wrapper ph">
+                        <a href="#" class="search-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper">
+                        <a href="cart.html" class="cart-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper last">
+                        <a href="/cart.html" class="login-btn"> <span>Личный кабинет</span></a>
+                    </div>
+                </div>
+
+                <a class="phone" href="tel:+7(4722)522020">+7 (4722) 52 20 20</a>
+
+                <div class="burger-wrapper-mobile">
+                    <a href="#my-menu" class="hamburger hamburger--emphatic">
+                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-md-4 col-header col-header2">
+            <div class="top-links top-links_right">
+                <a href="#">Корпоративные программы</a>
+            </div>
+            <ul class="city-list">
+                <li>
+                    <a href="#"><span>Новосибирск</span></a>
+                    <ul>
+                        <li><a href="#">Новосибирск</a></li>
+                        <li><a href="#">Москва</a></li>
+                        <li><a href="#">Барнаул</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+</div>
+
+<div class="container-fluid container-n-menu">
+    <div class="row custom-width n-menu">
+        <div class="col-12 col-n-menu">
+            <div class="n-menu-left">
+
+
+                <ul class="city-list city-list-mobile">
+                    <li>
+                        <a href="#"><span>Новосибирск</span></a>
+                        <ul>
+                            <li><a href="#">Новосибирск</a></li>
+                            <li><a href="#">Москва</a></li>
+                            <li><a href="#">Барнаул</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <nav class="nv">
+                    <ul class="n-menu-services">
+                        <li>
+                            <a href="#"><span>Услуги</span></a>
+                            <ul>
+                                <li><a href="#">Наращивание ресниц</a></li>
+                                <li><a href="#">Наращивание бровей</a></li>
+                                <li><a href="#">П</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <ul class="n-menu-rest">
+                    <li><a href="#">Бонусная программа</a></li>
+                    <li><a href="#">Портфолио и сертификаты</a></li>
+                    <li><a href="#">Мастера</a></li>
+                </ul>
+            </div>
+
+            <div class="n-menu-right">
+                <div class="personal">
+                    <div class="top-icon-wrapper">
+                        <a href="#" class="search-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper">
+                        <a href="cart.html" class="cart-btn"><i></i></a>
+                    </div>
+                    <div class="top-icon-wrapper last">
+                        <a href="#" class="login-btn"><span>Личный кабинет</span></a>
+                    </div>
+                </div>
+
+                <div class="burger-wrapper">
+                    <a href="#my-menu" class="hamburger hamburger--emphatic">
+                        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+
+    <section class="row top-stripe">
+        <div class="col-12 top-stripe-wrapper">
+            <div class="row custom-width">
+                <div class="col-12">
+                    <h3 class="top-stripe-title">Косоплетение и укладка</h3>
+
+                    <p class="top-stripe-text">Укладка волос будет лаконичным завершением Вашего образа. Придайте
+                        изюминку
+                        своему стиль с помощью косоплетения или оригинальной укладки.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="top-stripe-mobile">
+
+                <h2>Наращивание ресниц</h2>
+
+                <p>Красивые и густые ресницы, позволяют получить максимально притягательный взгляд. Подчеркните красоту
+                    Ваших глаз.</p>
+
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container-fluid">
+    <section class="row custom-width prices">
+
+        <div class="col-12 main-title-col">
+            <div class="main-title-wrapper">
+                <h2 class="main-title">Наши тарифы</h2>
+            </div>
+        </div>
+
+        <div class="col-12 slider-wrapper">
+            <div class="slider">
+
+                <div class="card card-slider">
+                    <a href="#" class="card-link card-link-c">
+                        <object type="obj">
+                            <div class="card-header">
+                                <h4>Title</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Описание услуги</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <p>Цена:</p>
+                                    <h4>500р.</h4>
+                                </div>
+                                <div class="card-buttons-wrapper">
+                                    <button class="btn-to-cart">В корзину</button>
+                                    <a href="#" class="btn-make-order" data-toggle="modal" data-target="#exModal">Записаться</a>
+                                </div>
+                            </div>
+                        </object>
+                    </a>
+                </div>
+
+                <div class="card card-slider">
+                    <a href="#" class="card-link card-link-c">
+                        <object type="obj">
+                            <div class="card-header">
+                                <h4>Title</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Описание услуги</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <p>Цена:</p>
+                                    <h4>500р.</h4>
+                                </div>
+                                <div class="card-buttons-wrapper">
+                                    <button class="btn-to-cart">В корзину</button>
+                                    <a href="#" class="btn-make-order" data-toggle="modal" data-target="#exModal">Записаться</a>
+                                </div>
+                            </div>
+                        </object>
+                    </a>
+                </div>
+
+                <div class="card card-slider">
+                    <a href="#" class="card-link card-link-c">
+                        <object type="obj">
+                            <div class="card-header">
+                                <h4>Title</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Описание услуги</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <p>Цена:</p>
+                                    <h4>500р.</h4>
+                                </div>
+                                <div class="card-buttons-wrapper">
+                                    <button class="btn-to-cart">В корзину</button>
+                                    <a href="#" class="btn-make-order" data-toggle="modal" data-target="#exModal">Записаться</a>
+                                </div>
+                            </div>
+                        </object>
+                    </a>
+                </div>
+
+                <div class="card card-slider">
+                    <a href="#" class="card-link card-link-c">
+                        <object type="obj">
+                            <div class="card-header">
+                                <h4>Title</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Описание услуги</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <p>Цена:</p>
+                                    <h4>500р.</h4>
+                                </div>
+                                <div class="card-buttons-wrapper">
+                                    <button class="btn-to-cart">В корзину</button>
+                                    <a href="#" class="btn-make-order" data-toggle="modal" data-target="#exModal">Записаться</a>
+                                </div>
+                            </div>
+                        </object>
+                    </a>
+                </div>
+
+                <div class="card card-slider">
+                    <a href="#" class="card-link card-link-c">
+                        <object type="obj">
+                            <div class="card-header">
+                                <h4>Title</h4>
+                            </div>
+                            <div class="card-body">
+                                <p>Описание услуги</p>
+                            </div>
+                            <div class="card-footer">
+                                <div class="card-price">
+                                    <p>Цена:</p>
+                                    <h4>500р.</h4>
+                                </div>
+                                <div class="card-buttons-wrapper">
+                                    <button class="btn-to-cart">В корзину</button>
+                                    <a href="#" class="btn-make-order" data-toggle="modal" data-target="#exModal">Записаться</a>
+                                </div>
+                            </div>
+                        </object>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-prices-simple">
+            <div class="row row-prices-simple">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-slider">
+                        <div class="card-header">
+                            <h4>Title</h4>
+                            <button class="card-btn"></button>
+                        </div>
+                        <div class="card-body">
+                            <p>Описание услуги</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <p>Цена:</p>
+                                <h4>500р.</h4>
+                            </div>
+                            <div class="card-buttons-wrapper">
+                                <button class="btn-to-cart">В корзину</button>
+                                <a href="#" class="btn-make-order" data-toggle="modal"
+                                   data-target="#exModal">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-slider">
+                        <div class="card-header">
+                            <h4>Title</h4>
+                            <button class="card-btn"></button>
+                        </div>
+                        <div class="card-body">
+                            <p>Описание услуги</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <p>Цена:</p>
+                                <h4>500р.</h4>
+                            </div>
+                            <div class="card-buttons-wrapper">
+                                <button class="btn-to-cart">В корзину</button>
+                                <a href="#" class="btn-make-order" data-toggle="modal"
+                                   data-target="#exModal">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-slider">
+                        <div class="card-header">
+                            <h4>Title</h4>
+                            <button class="card-btn"></button>
+                        </div>
+                        <div class="card-body">
+                            <p>Описание услуги</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <p>Цена:</p>
+                                <h4>500р.</h4>
+                            </div>
+                            <div class="card-buttons-wrapper">
+                                <button class="btn-to-cart">В корзину</button>
+                                <a href="#" class="btn-make-order" data-toggle="modal"
+                                   data-target="#exModal">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card card-slider">
+                        <div class="card-header">
+                            <h4>Title</h4>
+                            <button class="card-btn"></button>
+                        </div>
+                        <div class="card-body">
+                            <p>Описание услуги</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-price">
+                                <p>Цена:</p>
+                                <h4>500р.</h4>
+                            </div>
+                            <div class="card-buttons-wrapper">
+                                <button class="btn-to-cart">В корзину</button>
+                                <a href="#" class="btn-make-order" data-toggle="modal"
+                                   data-target="#exModal">Записаться</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 need-help">
+            <div class="form-help">
+                <div class="form">
+                    <form class="form" method="get" action="">
+                        <div class="main-title-wrapper">
+                            <h2 class="main-title">Нужна помощь?</h2>
+                        </div>
+                        <p>Оставьте на сайте заявку и наш менеджер в скором времени свяжется с
+                            вами.</p>
+
+                        <p class="person">
+                            <label for="name-input">Как к вам обращаться?</label><input type="text" id="name-input"
+                                                                                        placeholder="Введите ваше имя">
+                        </p>
+
+                        <p class="tel">
+                            <label for="tel-input">Номер телефона</label><input type="tel" id="tel-input"
+                                                                                placeholder="+7">
+                        </p>
+
+                        <div>
+                            <input class="submit-input" type="submit" value="Заказать звонок">
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+<div class="container">
+
+    <footer class="row footer">
+        <div class="col-6 col-md-5 col-lg-4 footer-col footer-col_border footer-col_border-1">
+            <h4 class="footer-title">Услуги</h4>
+            <ul class="footer-menu">
+                <li><a href="#">Маникюр</a></li>
+                <li><a href="#">Педикюр</a></li>
+                <li><a href="#">Наращивание ресниц</a></li>
+                <li><a href="#">Дизайн бровей</a></li>
+                <li><a href="#">Депиляция</a></li>
+                <li><a href="#">Массаж</a></li>
+                <li><a href="#">Макияж</a></li>
+                <li><a href="#">Косоплетение и укладка волос</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6 col-md-4 col-lg-3 footer-col-center footer-col_border">
+
+            <div class="footer-list-wrapper footer-list-wrapper-1">
+
+                <h4 class="footer-title">Контакты</h4>
+
+                <div class="footer-contacts">
+                    <a class="tel-link" href="tel:+7(000)0000000">+7 (000) 000 0000</a>
+                    <a class="tel-link" href="mailto:yandex@yandex.ru">yandex@yandex.ru</a>
+                    <address>г.Новосибирск ул.Уличная д.5</address>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-md-3 col-lg-4 footer-col-center footer-col-last">
+            <div class="footer-list-wrapper footer-list-wrapper-2">
+                <h4 class="footer-title">Социальные сети</h4>
+                <ul class="social">
+                    <li><a class="social-link insta" href="#"></a></li>
+                    <li><a class="social-link vk" href="#"></a></li>
+                    <li><a class="social-link facebook" href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

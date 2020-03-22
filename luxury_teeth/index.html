@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+<script src='http://ctr-localhost.ru/vlad/jq.js'></script> 
+
+    <meta charset="UTF-8">
+    <!--    <meta http-equiv="X-UA-Compatible" content="IE=edge" />-->
+
+    <meta http-equiv="X-UA-Compatible" content="IE=9"/>
+
+    <title>ลักซ์เซอรี่ ไวท์โปร (Luxury WhitePRO) - ปากกาที่ช่วยทำให้ฟันขาวขึ้น</title>
+    <link rel="stylesheet" href="css/style.css"/>
+
+
+    <script src="js/jquery.js" type="text/javascript"></script>
+    <script src="js/placeholders.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/getjs9b5f.js" type="text/javascript"></script>
+    <script src="js/plugins.js" type="text/javascript"></script>
+
+    <script defer="" src="js/jquery.flexslider.js"></script>
+    <script src="js/html5.js"></script>
+
+    <script type="text/javascript">
+
+        jQuery(document).ready(function () {
+
+            var myTime = 59 * 60;
+            var dbt = new Date(new Date().getTime() + (myTime * 1000));
+            var str_dbt = dbt.getFullYear() + '/0' + dbt.getMonth() + '/' + dbt.getDate();
+            jQuery('.timer').countdown(dbt, function (event) {
+                var totalHours = event.offset.totalDays * 24 + event.offset.hours;
+                var jQuerythis = jQuery(this).html(event.strftime(''
+                + '<span class="hours">12</span> <span class="highlight">:</span> '
+                + '<span class="min">%M</span> <span class="highlight">:</span> '
+                + '<span class="sec">%S</span> '));
+            });
+
+            $('.flexslider').flexslider({
+                animation: "slide",
+                start: function (slider) {
+                    $('body').removeClass('loading');
+                }
+            });
+
+        });
+
+    </script>
+
+    <script type="text/javascript" src="js/jquery.mask.min.js"></script>
+
+</head>
+
+<body>
+
+<div class="header">
+
+    <div class="container">
+        <div class="header__discount">
+            <span>ลด  <b>50%</b> </span>
+        </div>
+
+        <div class="header__price">
+
+            <div class="header__old-price">
+
+                <small>ราคาเดิม</small>
+                <span> {{ old_price }}  <small class="header__old-price-cr"> {{ currency }}</small></span>
+
+            </div>
+
+            <div class="header__new-price">
+                <small>ราคาโปรโมชั่น</small>
+                <span>{{ price }}  <small class="header__new-price-cr"> {{ currency }}</small></span>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- timer insert-->
+
+    <div class="header__timer_wrap">
+
+        <small>โปรโมชั่นสิ้นสุดใน</small>
+
+        <div class="timer-wrapper">
+
+            <div class="timer"><span class="hours">23</span> <span class="highlight">:</span> <span
+                    class="min">55</span>
+                <span class="highlight">:</span> <span class="sec">16</span></div>
+
+
+        </div>
+    </div>
+
+
+</div>
+
+<div class="wrapper">
+
+
+<section class="block-01">
+    <div class="container cl-fix">
+
+        <div class="s1-title fl-l">
+
+            <h1 class="s1-title__tovar-name">Luxury White <sup>PRO</sup></h1>
+
+            <small>วิธีที่จะทำให้ฟันขาวขึ้นได้อย่างมีประสิทธิภาพ</small>
+
+            <span class="s1-title__frase-01">ปากกาที่ช่วยทำให้ฟันขาวขึ้น</span>
+            <span class="s1-title__frase-02">เพื่อรอยยิ้มที่สวยสะอาด!</span>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="block-02">
+    <div class="container cl-fix">
+
+        <div class="s2-container">
+            <div class="s2__item">
+                <img src="img/bl-02_icon_01.png" alt="icon"/>
+
+                <div class="description">
+
+                    <span>อันดับ1 ของโลก</span>
+
+                    <p>ฟอกฟันขาวได้เองที่บ้าน</p>
+
+                </div>
+
+            </div>
+
+            <div class="s2__item">
+                <img src="img/bl-02_icon_02.png" alt="icon"/>
+
+                <div class="description">
+
+                    <span>ฟันขาวขึ้นจริง 100%</span>
+
+                    <p>ไม่ว่าฟันจะเหลืองแค่ไหนก็ตาม</p>
+
+                </div>
+            </div>
+
+            <div class="s2__item">
+                <img src="img/bl-02_icon_03.png" alt="icon"/>
+
+                <div class="description">
+
+                    <span>ใช้ได้จริงกับ</span>
+
+                    <p>ลักษณะฟันทุกประเภท</p>
+
+                </div>
+            </div>
+        </div>
+<div class="clearfix"></div>
+    </div>
+</section>
+
+<section class="block-03">
+    <div class="container cl-fix">
+
+        <div class="s3-upper cl-fix">
+
+            <div class="s3-upper_item fl-l">
+
+                <h2 class="s3-upper_item__title">นวัตกรรมใหม่แห่งปี!</h2>
+
+                <p class="s3-upper_item__text">ปากกาที่ช่วยทำให้ฟันขาวขึ้นลักซ์เซอรี่ ไวท์โปร <b>(Luxury White)</b>
+                    เป็นหนึ่งในเทคโนโลยีที่ทันสมัยมากที่สุด ในการคืนสีฟันธรรมชาติให้กับคุณได้ง่าย ๆ ที่บ้าน
+                    เป็นเทคโนโลยีที่ได้รับการพัฒนาขึ้นมาและใช้กันแพร่หลายทั่วโลก และตอนนี้มีพร้อมให้คนไทยได้ใช้แล้ว
+                </p>
+                <img src="img/s3_img_01.png" alt=""/>
+
+            </div>
+
+
+            <div class="s3-upper_item fl-r">
+                <img src="img/s3_img_02.png" alt=""/>
+
+                <p class="s3-upper_item__text02">เทคโนโลยีที่ใช้รังสรรค์ปากกานี้ขึ้นนั้นคือ
+                    การใช้เจลทำให้ฟันขาวคุณภาพสูงที่ประกอบด้วยคาบาไมด์เพอร็อกไซด์ 35% -
+                    ซึ่งเป็นสารที่ปล่อยออกซิเจนออกมาซึ่งเห็นได้ภายใต้แสง LED และเมื่อเปรียบเทียบกับเทคโนโลยีอื่น ๆ
+                    เทคโนโลยีนี้ฟอกสีฟันนี้ ให้ผลลัพธ์ที่ยอดเยี่ยมปราศจากความเจ็บปวดและปลอดภัย 100%
+                    ด้วยวิธีการนี้ไม่ทำให้เกิดผลข้างเคียงใด ๆ และไม่ก่อให้เกิดความเสียหายกับเคลือบฟัน
+                    มันจะช่วยให้ฟันของคุณขาวขึ้นได้ 6-10 ระดับได้หลังจากการใช้ครั้งแรก</p>
+
+
+                <div class="s3-upper_item__price-block">
+
+                    <div class="s3-upper_item__old-price">
+
+                        <small>ราคาเดิม</small>
+                        <span> {{ old_price }} <small class="s3-upper_item__old-price-cr"> {{ currency }}</small></span>
+
+                    </div>
+
+                    <img src="img/s3-arrows.png" alt=""/>
+
+                    <div class="s3-upper_item__new-price">
+                        <small>ราคาโปรโมชั่น</small>
+                        <span>{{ price }}  <small class="s3-upper_item__new-price-cr"> {{ currency }}</small></span>
+                    </div>
+                </div>
+
+                <a class="btn for_scroll" href=".form">สั่งเลย</a>
+
+            </div>
+
+        </div>
+
+        <div class="s3-lower">
+
+            <div class="s3-lower-title cl-fix">
+                <small>วิธีใช้</small>
+                <h1 class="s3-lower-title__tovar-name">Luxury White <sup>PRO</sup></h1>
+            </div>
+
+
+            <div class="s3-lower__item">
+                <div class="image"><img src="img/s3-icon_01.png" alt=""/></div>
+                <p>ใช้ผ้าเช็ดหน้าหรือกระดาษทิชชู่เช็ดฟันให้แห้งสนิท</p>
+            </div>
+
+            <div class="s3-lower__item">
+                <div class="image"><img src="img/s3-icon_02.png" alt=""/></div>
+                <p>หมุนแท่งเจล จนเห็นเนื้อเจลขึ้นมา</p>
+            </div>
+
+            <div class="s3-lower__item">
+                <div class="image"><img src="img/s3-icon_03.png" alt=""/></div>
+                <p>ยิงฟันและทาเจลให้ทั่วบริเวณฟันที่ต้องการให้ขาวขึ้น</p>
+            </div>
+
+            <div class="s3-lower__item">
+                <div class="image"><img src="img/s3-icon_04.png" alt=""/></div>
+                <p>หลังจากทาเจลทั่วแล้ว ให้ยิงฟันค้างไว้ประมาณ 3-4 นาที พยามยามอย่าให้ริมฝีปากโดนผิวฟัน</p>
+            </div>
+
+            <div class="s3-lower__item">
+                <div class="image"><img src="img/s3-icon_05.png" alt=""/></div>
+                <p>หลังจากเสร็จสิ้นการฟอกฟัน ไม่ควรดื่นเครื่องดื่มหรือรับประทานอาหารใด ๆ เป็นเวลา ½ ชั่วโมง</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section class="block-04">
+    <div class="container cl-fix">
+
+
+        <div class="s4-title cl-fix">
+            <small>ประสิทธิภาพของ้</small>
+            <h1 class="s4-title__tovar-name">Luxury White <sup>PRO</sup></h1>
+        </div>
+
+
+        <div class="s4-upper cl-fix">
+
+            <div class="s4-upper__item">
+                <div class="image"><img src="img/sec4_up_item_01.png" alt=""/></div>
+                <span>หลังจากการใช้ครั้งแรก</span>
+            </div>
+
+            <div class="s4-upper__item">
+                <div class="image"><img src="img/sec4_up_item_02.png" alt=""/></div>
+                <span>สัปดาห์หลังจากการใช้</span>
+            </div>
+
+            <div class="s4-upper__item">
+                <div class="image"><img src="img/sec4_up_item_03.png" alt=""/></div>
+                <span>เดือนหลังจากการใช้</span>
+            </div>
+
+        </div>
+
+
+        <div class="s4-middle cl-fix">
+
+                 <span class="s4-middle__image-red">
+                    ผลลัพธ์ที่ยอดเยี่ยมจากการฟอกฟันขาวจะคงอยู่นานหลายเดือน!
+                </span>
+
+            <div class="clear-fix"></div>
+
+            <div class="s4-middle-content fl-l">
+
+                <div class="s4-middle-content__row">
+
+                    <div class="s4-middle-content__image"><img src="img/sec4_m_item_01.png" alt=""/></div>
+
+                    <p>ลดขั้นตอนยุ่งยากได้มากมายเมื่อเทียบกับวิธีการต่าง ๆ ที่ต้องใช้เลเซอร์</p>
+                </div>
+
+                <div class="s4-middle-content__row">
+
+                    <div class="s4-middle-content__image"><img src="img/sec4_m_item_02.png" alt=""/></div>
+
+                    <p>ฟันจะได้รับการทำความสะอาดในเวลาอันสั้น</p>
+
+                </div>
+
+                <div class="s4-middle-content__row">
+
+                    <div class="s4-middle-content__image"><img src="img/sec4_m_item_03.png" alt=""/></div>
+
+                    <p>ไม่ทำให้เกิดการเสียวฟัน</p>
+                </div>
+
+            </div>
+
+
+            <div class="s4-middle-content fl-l">
+
+                <div class="s4-middle-content__row">
+
+                    <div class="s4-middle-content__image"><img class="s4-middle-content__img-item_04"
+                                                               src="img/sec4_m_item_04.png" alt=""/></div>
+
+                    <p>เพิ่มความมั่นใจและเกิดผลตามมาที่ดีในทางจิตวิทยา</p>
+
+                </div>
+
+                <div class="s4-middle-content__row">
+
+                    <div class="s4-middle-content__image"><img src="img/sec4_m_item_05.png" alt=""/></div>
+
+                    <p>สามารถควบคุมระดับความขาวของฟันได้</p>
+
+                </div>
+
+                <div class="s4-middle-content__row">
+
+                    <div class="s4-middle-content__image"><img class="s4-middle-content__img-item_06"
+                                                               src="img/sec4_m_item_06.png" alt=""/></div>
+
+                    <p>เหมาะสำหรับทั้งชายและหญิง
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="s4-lower cl-fix">
+
+            <div class="s4-lower__title cl-fix">
+                <small>ก่อน/ หลัง การใช้้</small>
+                <h1 class="s4-lower__title__tovar-name">Luxury White <sup>PRO</sup></h1>
+            </div>
+
+            <div class="s4-lower__image">
+
+                <img src="img/sec4_l_item_01.png" alt=""/>
+                <img src="img/sec4_l_item_02.png" alt=""/>
+                <img src="img/sec4_l_item_03.png" alt=""/>
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<section class="block-05">
+
+<div class="container cl-fix">
+
+<div class="s5-upper-title">
+    <small> ความคิดเห็นต่าง ๆ จากลูกค้าที่พึงพอใจสูงสุด
+    </small>
+    <h1 class="s5-upper-title__tovar-name">Luxury White <sup>PRO</sup></h1>
+</div>
+
+<!--  flex-slider begins-->
+
+<div class="flexslider-wrapper">
+
+    <div class="width">
+
+        <div class="flexslider carousel">
+
+            <div style="overflow: hidden; position: relative;" class="flex-viewport">
+
+            </div>
+            <ol class="flex-control-nav flex-control-paging">
+                <li><a class="flex-active">1</a>
+                </li>
+                <li><a class="">2</a>
+                </li>
+                <li>
+                    <a class="">3</a>
+                </li>
+                <li>
+                    <a class="">4</a>
+                </li>
+            </ol>
+            <ul class="flex-direction-nav">
+                <li><a class="flex-prev" href="#">ก่อน</a>
+                </li>
+                <li><a class="flex-next" href="#">หลัง</a>
+                </li>
+            </ul>
+            <div class="flex-viewport" style="overflow: hidden; position: relative;">
+                <ul style="width: 1200%; transition-duration: 0s; transform: translate3d(-740px, 0px, 0px);"
+                    class="slides">
+                    <li class="clone" style="width: 740px; float: left; display: block;">
+                        <div class="review">
+                            <img src="img/ava1_3.png" alt="">
+
+                            <div class="message">
+                                <div class="name">
+                                    <div>เฮเลน</div>
+                                    ฟลอริดา, ประเทศสหรัฐอเมริกา
+                                </div>
+
+                                เท่าที่ฉันจำได้ฉันอายฟันของฉันตลอด ฉันมีสุขภาพฟันที่ดีนะแต่มันไม่ขาว
+                                จะไปฟอกฟันขาวที่คลีนิกก็แพงมาก ๆ เลย ฉันก็ไม่เคยไปทำ ฉันสั่งปากกานี้มาใช้
+                                โอ้..ผลลัพธ์มันยอดเยี่ยมมาก! เพื่อน ๆ ของฉันก็กำลังจะสั่งเหมือนกัน!
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 740px; float: left; display: block;" class="clone flex-active-slide">
+                        <div class="review">
+                            <img src="img/ava1_4.png" alt="">
+
+                            <div class="message">
+
+                                <div class="name">
+                                    <div>ไนเจิล</div>
+                                    อาร์เจนตินา
+                                </div>
+
+                                ผมอ่านเกี่ยวกับการฟอกฟันขาวมานานแล้ว - มันเป็นที่ยอมรับกันโดยทั่วไปในยุโรปและอเมริกา
+                                ผมเลยตัดสินใจสั่งปากกาที่ช่วยทำให้ฟันขาวมาใช้ และผมก็ไม่ผิดหวังเลย! มันยอดเยี่ยมมาก
+                                ๆ เมื่อเทียบกับเงินที่จ่ายไป ฟันของผมขาวขึ้นตั้ง 7 ระดับ!
+                                ผมเอาเจ้าสิ่งนี้ติดกระเป๋าไว้ตลอด! จะสั่งอีกแน่นอน!
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 740px; float: left; display: block;" class="">
+                        <div class="review">
+                            <img src="img/ava1_1.png" alt="">
+
+                            <div class="message">
+                                <div class="name">
+                                    <div>เคทเธอลีน</div>
+                                    ลอนดอน
+                                </div>
+
+
+                                สวัสดีค่ะ! ฉันรู้สึกอายเวลาต้องยิ้มมานานแล้ว -
+                                เพราะว่าฟันของฉันเหลืองมาตั้งแต่เด็กแล้ว ฉันแปรงฟันเป็นประจำนะ
+                                แต่นั่นเป็นสิ่งที่ธรรมชาติให้ฉันมา ฉันไปฟอกฟันที่ร้าน ฉันเสียเงินตั้ง 70 ปอนด์ -
+                                มันไม่ช่วยสักนิดเลย พวกเขากลับฉันว่าฉันต้องทำวิธีพิเศษราคา 140 ปอนด์
+                                แต่ฉันปฏิเสธแล้วก็เลยสั่งซื้อลักซ์เซอรี่ ไวท์ (Luxury White) มาใช้!
+                                ทำไมฉันไม่สั่งมาตั้งนานแล้วนะ ฟันขาวขึ้นจริง ๆ -
+                                สุดท้ายผู้คนต่างหลงใหลรอยยิ้มของฉัน!
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" style="width: 740px; float: left; display: block;">
+                        <div class="review">
+                            <img src="img/ava1_2.png" alt="">
+
+                            <div class="message">
+
+                                <div class="name">
+                                    <div>วลาดีสลาฟ</div>
+                                    โปแลนด์, วอร์ซอว์
+                                </div>
+
+                                ผมชื่อวลาดีสลาฟ ผมเป็นนักสูบบุหรี่ตัวยง ไม่ว่ายาสีฟันไหน ๆ ก็ไม่สามารถขจัดคราบเหลือง
+                                ๆ บนฟันของผมที่เกิดจากการสูบบุหรี่ได้ (ผมเลิกสูบบุหรี่ไม่ได้)
+                                ผมไม่อยากจะกลับไปหาหมอฟันอีกแล้ว ผมกลัว
+                                นั่นเป็นเหตุผลว่าทำไมผมสั่งปากกานี้ทางอินเตอร์เน็ต ตอนที่ผมลองใช้เป็นช่วงวันหยุดยาว
+                                ในตอนแรกภรรยาของผมก็ไม่เชื่อเหมือนกัน - แต่หลังจากนั้น 3 วัน
+                                ฟันของผมก็ขาวขึ้นราวกับฟันเด็กเลย นี่เป็นข่าวดีมากใช่ไหม!
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="" style="width: 740px; float: left; display: block;">
+                        <div class="review">
+                            <img src="img/ava1_3.png" alt="">
+
+                            <div class="message">
+                                <div class="name">
+                                    <div>เฮเลน</div>
+                                    ฟลอริดา, ประเทศสหรัฐอเมริกา
+                                </div>
+
+
+                                เท่าที่ฉันจำได้ฉันอายฟันของฉันตลอด ฉันมีสุขภาพฟันที่ดีนะแต่มันไม่ขาว
+                                จะไปฟอกฟันขาวที่คลีนิกก็แพงมาก ๆ เลย ฉันก็ไม่เคยไปทำ ฉันสั่งปากกานี้มาใช้
+                                โอ้..ผลลัพธ์มันยอดเยี่ยมมาก! เพื่อน ๆ ของฉันก็กำลังจะสั่งเหมือนกัน!
+
+                            </div>
+                        </div>
+                    </li>
+                    <li style="width: 740px; float: left; display: block;" class="clone">
+                        <div class="review">
+                            <img src="img/ava1_4.png" alt="">
+
+                            <div class="message">
+                                <div class="name">
+                                    <div>ไนเจิล</div>
+                                    อาร์เจนตินา
+                                </div>
+
+
+                                ผมอ่านเกี่ยวกับการฟอกฟันขาวมานานแล้ว - มันเป็นที่ยอมรับกันโดยทั่วไปในยุโรปและอเมริกา
+                                ผมเลยตัดสินใจสั่งปากกาที่ช่วยทำให้ฟันขาวมาใช้ และผมก็ไม่ผิดหวังเลย! มันยอดเยี่ยมมาก
+                                ๆ เมื่อเทียบกับเงินที่จ่ายไป ฟันของผมขาวขึ้นตั้ง 7 ระดับ!
+                                ผมเอาเจ้าสิ่งนี้ติดกระเป๋าไว้ตลอด! จะสั่งอีกแน่นอน!
+
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ol class="flex-control-nav flex-control-paging">
+                <li><a>1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+                <li><a>4</a></li>
+            </ol>
+            <ul class="flex-direction-nav">
+                <li><a class="flex-prev" href="#">Previous</a></li>
+                <li><a class="flex-next" href="#">Next</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+<!--  flex-slider Ends-->
+
+<div class="s5-middle-title">
+    <h1 class="s5-middle-title__slogan">
+        ลักซ์เซอรี่ ไวท์ <sub class="sb">โปร </sub>
+        <b>Luxury White <sub>PRO</sub></b></h1>
+    <small>วิธีที่จะทำให้ฟันขาวขึ้นได้อย่างมีประสิทธิภาพ</small>
+
+</div>
+
+<div class="s5-lower">
+
+    <div class="form-container fl-r">
+
+        <form action="{{ order_create_url|safe }}" method="post" class="form">
+
+            <select class="ctr" name="country" id="country_code_selector" placeholder="">
+                <option value="TH">Thailand</option>
+            </select>
+
+            <input name="name" type="text" placeholder="ชื่อและนามสกุล"/>
+
+            <input class="only_number" name="phone" type="text" placeholder="เบอร์โทรศัพท์"/>
+
+            <!-- price-->
+
+
+            <div class="s3-upper_item__price-block">
+
+                <div class="s3-upper_item__old-price">
+
+                    <small>ราคาเดิม</small>
+                    <span> {{ old_price }}  <small class="s3-upper_item__old-price-cr"> {{ currency }}</small></span>
+
+                </div>
+
+                <img style="display: block; float: left; margin-right: 15px;" src="img/s3-arrows.png" alt=""/>
+
+                <div class="s3-upper_item__new-price">
+                    <small>ราคาโปรโมชั่น</small>
+                    <span>{{ price }}  <small class="s3-upper_item__new-price-cr"> {{ currency }}</small></span>
+                </div>
+            </div>
+
+
+            <input class="js_submit btn" type="submit" value="สั่งเลย"/>
+
+
+        </form>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<footer>
+
+
+</footer>
+
+
+</div>
+
+
+</body>
+</html>
